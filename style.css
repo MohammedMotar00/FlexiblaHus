@@ -91,4 +91,150 @@ header ul li {
   background: url("./img/rowan-heuvel-51244_copy_3.png") no-repeat center center/cover;
   height: 350px;
 }
+
+main {
+  max-width: 940px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+main .rubruk {
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .rubruk h1 {
+  width: 133px;
+  color: #000000;
+  font-family: Sansita;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+main .rubruk p {
+  color: #888888;
+  font-family: Asap;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+main .img__gallery .img {
+  max-height: 540px;
+}
+
+main .img__gallery .img img {
+  width: 100%;
+}
+
+main .img__gallery .pick__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
+main .img__gallery .pick__img .box {
+  border: 1px solid;
+  width: 172px;
+  height: 99px;
+  background-color: #cccccc;
+}
+
+main .img__gallery .pick__img .box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+main .img__gallery .pick__img .box:first-child:hover,
+main .img__gallery .pick__img .box:nth-child(2):hover {
+  cursor: pointer;
+}
+
+main .text__container {
+  margin: 20px auto;
+  border: 1px solid blue;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .text__container h2 {
+  max-width: 745px;
+  min-height: 59px;
+  color: #000000;
+  font-family: Sansita;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+main .text__container p {
+  max-width: 772px;
+  min-height: 98px;
+  color: #000000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+main table {
+  max-width: 460px;
+  border-collapse: collapse;
+}
+
+main table th {
+  background-color: #ea4f3d;
+  width: 100%;
+  text-align: left;
+  height: 35px;
+  padding-left: 12px;
+}
+
+main table th p {
+  width: 45px;
+  height: 12px;
+  color: #ffffff;
+  font-family: Asap;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main table th:first-child {
+  border-top-left-radius: 5px;
+}
+
+main table th:nth-child(2) {
+  border-top-right-radius: 5px;
+}
+
+main table td {
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
