@@ -98,7 +98,7 @@ main {
   border: 1px solid red;
 }
 
-main .rubruk {
+main .rubrik {
   margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +112,7 @@ main .rubruk {
           align-items: center;
 }
 
-main .rubruk h1 {
+main .rubrik h1 {
   width: 133px;
   color: #000000;
   font-family: Sansita;
@@ -120,7 +120,7 @@ main .rubruk h1 {
   font-weight: 700;
 }
 
-main .rubruk p {
+main .rubrik p {
   color: #888888;
   font-family: Asap;
   font-size: 20px;
@@ -256,7 +256,7 @@ main .table__container table tbody {
 }
 
 main .table__container table tbody tr {
-  border: 2px solid #fff;
+  border-top: 2px solid #fff;
 }
 
 main .table__container table tbody tr td:first-child {
@@ -273,7 +273,6 @@ main .table__container table tbody tr td:first-child p {
 }
 
 main .table__container table tbody tr td:nth-child(2) {
-  border: 1px solid;
   color: #000000;
   font-family: Lato;
   font-size: 14px;
@@ -285,7 +284,28 @@ main .table__container table tbody tr td:nth-child(2) p {
   min-width: 75px;
 }
 
-main .table__container table tbody tr td i {
-  font-size: 50px !important;
+main .form__container {
+  border: 1px solid blue;
+}
+
+main .form__container .rubrik {
+  text-align: center;
+}
+
+main .form__container .rubrik h1 {
+  color: #000000;
+  font-family: Sansita;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+main .form__container .rubrik p {
+  min-width: 456px;
+  color: #000000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
 /*# sourceMappingURL=style.css.map */

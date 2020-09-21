@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlexiblaHus</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="all.min.css" />
+    <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="/your-path-to-fontawesome/js/all.js"></script>
     <!--load all styles -->
     <!--load all styles -->
@@ -44,7 +48,7 @@
 
     <main>
       <!-- Klar -->
-      <div class="rubruk">
+      <div class="rubrik">
         <h1>Gotland</h1>
         <p>1,5 PLANSHUS | 125 M²</p>
       </div>
@@ -125,7 +129,9 @@
             <tr>
               <td>Planskiss 1.pdf</td>
               <td>
-                <i class="fas fa-download"></i>
+                <span>
+                  <i class="fas fa-download"></i>
+                </span>
               </td>
             </tr>
             <tr>
@@ -144,11 +150,13 @@
       <hr />
 
       <div class="form__container">
-        <h1>Intresseanmälan</h1>
-        <p>
-          Fyll i formuläret nedan för att lämna en intresseanmälan så kontaktar
-          vi dig.
-        </p>
+        <div class="rubrik">
+          <h1>Intresseanmälan</h1>
+          <p>
+            Fyll i formuläret nedan för att lämna en intresseanmälan så
+            kontaktar vi dig.
+          </p>
+        </div>
 
         <form>
           <label for="fname">Förnamn *</label>

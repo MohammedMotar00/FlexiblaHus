@@ -4,7 +4,7 @@ main {
   border: 1px solid red;
 
   // Rubrik
-  .rubruk {
+  .rubrik {
     margin: 40px auto;
     display: flex;
     flex-direction: column;
@@ -149,7 +149,7 @@ main {
         background-color: #eeeeee;
 
         tr {
-          border: 2px solid #fff;
+          border-top: 2px solid #fff;
 
           td:first-child {
             color: #888888;
@@ -165,7 +165,7 @@ main {
           }
 
           td:nth-child(2) {
-            border: 1px solid;
+            // border: 1px solid;
             color: #000000;
             font-family: Lato;
             font-size: 14px;
@@ -178,9 +178,38 @@ main {
           }
 
           td i {
-            font-size: 50px !important;
+            // font-size: 50px !important;
           }
         }
+      }
+    }
+  }
+
+  // form
+  .form__container {
+    border: 1px solid blue;
+
+    .rubrik {
+      text-align: center;
+
+      h1 {
+        // width: 183px;
+        // height: 20px;
+        color: #000000;
+        font-family: Sansita;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 35px;
+      }
+
+      p {
+        min-width: 456px;
+        // height: 12px;
+        color: #000000;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
       }
     }
   }
