@@ -3,3 +3,30 @@
     center/cover;
   height: 350px;
 }
+
+.banner__container {
+  margin: 70px 0 50px 0;
+  position: relative;
+  background-color: #717ca1;
+
+  .banner.second {
+    background: url("./img//Vector_Smart_Object.png") no-repeat center
+      center/cover;
+    height: 350px;
+    opacity: 0.1;
+  }
+  h1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 611px;
+    min-height: 89px;
+    color: #ffffff;
+    font-family: Sansita;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
