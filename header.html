@@ -8,21 +8,37 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="all.min.css" /> -->
-    <!-- <link
-      href="/your-path-to-fontawesome/css/fontawesome.css"
-      rel="stylesheet"
-    /> -->
+
     <link rel="stylesheet" href="style.css" />
-    <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script> -->
-    <!--load all styles -->
-    <!--load all styles -->
+
     <script
       src="https://kit.fontawesome.com/26d4a64054.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="./main.js"></script>
   </head>
   <body>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link"> Home </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link"> About </a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link"> Skills </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link"> Portfolio </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link"> Contact </a>
+        </li>
+      </ul>
+    </div>
+
     <header>
       <div>
         <img src="./img/Logo.png" alt="flexibla hus img" />
@@ -64,14 +80,15 @@
       <!-- håller på ... -->
       <div class="img__gallery">
         <div class="img">
-          <img src="./img/IMG_1089_copy.png" alt="" />
+          <img id="bigImg" src="./img/IMG_1090.JPG.png" alt="" />
         </div>
+
         <div class="pick__img">
           <div class="box">
-            <img src="./img/IMG_1089_copy_2.png" alt="" />
+            <img id="img1" src="./img/IMG_1089_copy_2.png" alt="" />
           </div>
           <div class="box">
-            <img src="./img/IMG_1090 (1).png" alt="" />
+            <img id="img2" src="./img/IMG_1090 (1).png" alt="" />
           </div>
           <div class="box"></div>
           <div class="box"></div>

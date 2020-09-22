@@ -10,7 +10,7 @@ main {
     align-items: center;
 
     h1 {
-      width: 133px;
+      max-width: 133px;
       // height: 30px;
       color: #000000;
       font-family: Sansita;
@@ -32,13 +32,17 @@ main {
 
   // Bild
   .img__gallery {
-    // width: 940px;
-
+    text-align: center;
     .img {
       max-height: 540px;
+      // max-width: 100%;
+      border: 1px solid red;
 
       img {
-        width: 100%;
+        object-fit: contain;
+
+        max-width: 100%;
+        max-height: 100%;
       }
     }
 
@@ -54,7 +58,7 @@ main {
         background-color: #cccccc;
 
         img {
-          object-fit: contain;
+          // object-fit: contain;
           height: 100%;
           width: 100%;
         }
@@ -104,6 +108,7 @@ main {
   // First table
   .table__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
 
@@ -114,6 +119,7 @@ main {
     table {
       // min-width: 320px;
       flex: 1;
+      // width: 100%;
       border-collapse: collapse;
       // padding: 10px;
 
@@ -207,6 +213,7 @@ main {
   // form
   .form__container {
     .rubrik {
+      border: 1px solid;
       text-align: center;
 
       h1 {
@@ -220,8 +227,8 @@ main {
       }
 
       p {
-        width: 456px;
-        height: 12px;
+        // max-width: 456px;
+        // max-height: 12px;
         color: #000000;
         font-family: "Lato";
         font-size: 14px;

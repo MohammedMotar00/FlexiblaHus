@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1920px;
+  // max-width: 1920px;
 }
 
 body {
   // border: 1px solid #f30000;
+  max-width: 1920px;
+  margin: 0 auto;
+  border: 1px solid green;
 }
 
 header {

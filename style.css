@@ -3,7 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   max-width: 1920px;
+  margin: 0 auto;
+  border: 1px solid green;
 }
 
 header {
@@ -140,7 +145,7 @@ main .rubrik {
 }
 
 main .rubrik h1 {
-  width: 133px;
+  max-width: 133px;
   color: #000000;
   font-family: Sansita;
   font-size: 40px;
@@ -156,12 +161,20 @@ main .rubrik p {
   text-transform: uppercase;
 }
 
+main .img__gallery {
+  text-align: center;
+}
+
 main .img__gallery .img {
   max-height: 540px;
+  border: 1px solid red;
 }
 
 main .img__gallery .img img {
-  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 main .img__gallery .pick__img {
@@ -182,8 +195,6 @@ main .img__gallery .pick__img .box {
 }
 
 main .img__gallery .pick__img .box img {
-  -o-object-fit: contain;
-     object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -233,6 +244,8 @@ main .table__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -344,6 +357,7 @@ main .table__container table tbody tr i:hover {
 }
 
 main .form__container .rubrik {
+  border: 1px solid;
   text-align: center;
 }
 
@@ -356,8 +370,6 @@ main .form__container .rubrik h1 {
 }
 
 main .form__container .rubrik p {
-  width: 456px;
-  height: 12px;
   color: #000000;
   font-family: "Lato";
   font-size: 14px;
@@ -502,6 +514,7 @@ main .form__container form button p {
 
 footer {
   max-width: 940px;
+  border: 1px solid red;
   margin: 0 auto;
   margin-bottom: 70px;
   display: -ms-grid;
@@ -608,8 +621,31 @@ footer .copyright .fb {
 }
 
 footer .copyright .fb img {
-  height: 100%;
+  max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media (max-width: 680px) {
+  .list__container {
+    display: none;
+  }
+  footer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 355px) {
+  .table__container table {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
