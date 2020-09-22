@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlexiblaHus</title>
-    <link rel="stylesheet" href="all.min.css" />
     <link
-      href="/your-path-to-fontawesome/css/fontawesome.css"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="all.min.css" /> -->
+    <!-- <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="style.css" />
-    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script> -->
     <!--load all styles -->
     <!--load all styles -->
+    <script
+      src="https://kit.fontawesome.com/26d4a64054.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -129,18 +137,29 @@
             <tr>
               <td>Planskiss 1.pdf</td>
               <td>
-                <span>
+                <div>
+                  <i class="fas fa-external-link-alt"></i>
                   <i class="fas fa-download"></i>
-                </span>
+                </div>
               </td>
             </tr>
             <tr>
               <td>Planskiss 1.pdf</td>
-              <td><!--Fontawesome--></td>
+              <td>
+                <div>
+                  <i class="fas fa-external-link-alt"></i>
+                  <i class="fas fa-download"></i>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Planskiss 1.pdf</td>
-              <td><!--Fontawesome--></td>
+              <td>
+                <div>
+                  <i class="fas fa-external-link-alt"></i>
+                  <i class="fas fa-download"></i>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -159,29 +178,60 @@
         </div>
 
         <form>
-          <label for="fname">Förnamn *</label>
-          <input type="text" id="fname" name="fname" />
+          <div>
+            <label for="fname">Förnamn *</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
 
-          <label for="lname">Efternamn: *</label>
-          <input type="text" id="lname" name="lname" />
+          <div>
+            <label for="lname">Efternamn: *</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
 
-          <label for="tel">Telefon dagtid *</label>
-          <input type="text" id="fname" name="fname" />
+          <div>
+            <label for="tel">Telefon dagtid *</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
 
-          <label for="mobil">Mobil: *</label>
-          <input type="text" id="mobil" name="mobil" />
+          <div>
+            <label for="mobil">Mobil: *</label>
+            <input type="text" id="mobil" name="mobil" />
+          </div>
 
-          <label for="e-post">E-post: *</label>
-          <input type="text" id="e-post" name="e-post" />
+          <div>
+            <label for="e-post">E-post: *</label>
+            <input type="text" id="e-post" name="e-post" />
+          </div>
 
-          <label for="bygg">Byggkommun: *</label>
-          <input type="text" id="bygg" name="bygg" />
+          <div>
+            <label for="bygg">Byggkommun: *</label>
+            <input type="text" id="bygg" name="bygg" />
+          </div>
 
-          <label for="hus-typ">Hustyp jag är intresserad av: *</label>
-          <input type="text" id="hus-typ" name="hus-typ" />
+          <div>
+            <label for="hus-typ">Hustyp jag är intresserad av: *</label>
+            <input type="text" id="hus-typ" name="hus-typ" />
+          </div>
 
-          <p>Jag blir helst kontaktad via:</p>
-          <input type="radio" name="typ" id="telefon" />
+          <div class="email">
+            <p>Jag blir helst kontaktad via:</p>
+            <div class="radio_container">
+              <div>
+                <input type="radio" name="typ" id="telefon" value="Telefon" />
+                <label for="telefon">Telefon</label>
+              </div>
+              <div>
+                <input type="radio" name="typ" id="E-post" />
+                <label for="E-post">E-post</label>
+              </div>
+
+              <label class="container__radio"
+                >One
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
         </form>
       </div>
     </main>
