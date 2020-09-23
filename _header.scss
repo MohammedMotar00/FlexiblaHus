@@ -2,14 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // max-width: 1920px;
 }
 
 body {
-  // border: 1px solid #f30000;
   max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid green;
+  position: relative;
 }
 
 header {
@@ -32,9 +30,15 @@ header {
     height: 94px;
   }
 
-  .list__container {
+  .list__container,
+  .menuBtn {
     padding-bottom: 20px;
   }
+
+  // .menuBtn {
+  //   // opacity: 0;
+  //   color: red !important;
+  // }
 
   ul {
     display: flex;

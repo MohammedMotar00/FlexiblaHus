@@ -1,4 +1,7 @@
 @media (max-width: 680px) {
+  header {
+    justify-content: space-around;
+  }
   .list__container {
     display: none;
   }
@@ -9,8 +12,30 @@
 }
 
 @media (max-width: 420px) {
+  .banner__container {
+    h1 {
+      font-size: 25px;
+    }
+  }
+  footer,
+  .contact__container,
+  .box,
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   footer {
-    grid-template-columns: 1fr;
+    .links {
+      margin-top: 40px;
+    }
+    // .links,
+    .open,
+    .copyright {
+      margin: 25px 0;
+    }
   }
 }
 
@@ -18,6 +43,7 @@
   .table__container {
     table {
       width: 100%;
+      margin-bottom: 20px;
     }
   }
 }
